@@ -23,14 +23,19 @@ Learning rate controls how quickly or slowly a neural network model learns a pro
 The number of training examples in one forward/backward pass. trying to set range between 32 and 256 to make sure the batch size is not too low or too large. trying to make balance between the training process speed and he model performance.
 I wanted to include more especially epoch , and to increase the training jobs. but I was afraid from the cost specially this kind of training instance is not cheap.
 
-Remember that your README should:
-- Include a screenshot of completed training jobs
-- Logs metrics during the training process
-- Tune at least two hyperparameters
-- Retrieve the best best hyperparameters from all your training jobs
 
+
+- Include a screenshot of completed training jobs
+
+![4training jop](https://user-images.githubusercontent.com/37002455/195200609-48ad4332-e363-42a8-bed4-9e927accdf20.jpg)
+![4training jop2](https://user-images.githubusercontent.com/37002455/195200617-868a3bd7-e4a9-48ef-8c6b-7b902c0fc1f9.png)
+
+
+- Logs metrics during the training process
 ![log1](https://user-images.githubusercontent.com/37002455/195200273-a393098b-98d0-4481-9d94-d69adceceaec.jpg)
-![Alt text](udacity-nd009t-C2-Developing-ML-Workflow/project/log1.jpg?raw=true "log1")
+![log2](https://user-images.githubusercontent.com/37002455/195200476-4fab2b63-591a-497d-bd85-e60777e55e47.jpg)
+![log3](https://user-images.githubusercontent.com/37002455/195200502-7a633519-5284-44b6-804d-eb6471ada248.jpg)
+
 
 ## Debugging and Profiling
 **TODO**: Give an overview of how you performed model debugging and profiling in Sagemaker
