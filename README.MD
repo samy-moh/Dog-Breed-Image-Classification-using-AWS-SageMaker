@@ -38,18 +38,19 @@ I wanted to include more especially epoch , and to increase the training jobs. b
 
 
 ## Debugging and Profiling
-**TODO**: Give an overview of how you performed model debugging and profiling in Sagemaker
+As in lession 4, After importing debuger library ,setup hooks in train,test functionthen configered the debuger rules Vanishing Gradients to track the gradients of the loss function if its going too low. Overfitting to avoid make the model performing too well on the training set but poorly on new data. overtraining to check if the results in poor generalization and Poor weight initialisation.
 
 ### Results
-**TODO**: What are the results/insights did you get by profiling/debugging your model?
+there was some issues detectd in the profiler , but mostley around increasing batch size and check if there is a bottleneck. even myself during the training realised incresing batch size the model preform better, I think as a best practice to try set a range for batch size , but I didn't do that because increasing training time and the resources is limited.
 
-**TODO** Remember to provide the profiler html/pdf file in your submission.
+![summery](https://user-images.githubusercontent.com/37002455/195224223-b2d78563-d87f-4f20-a11d-b69a3e1d9665.jpg)
 
 
 ## Model Deployment
-**TODO**: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+this part took me a while to understand , after visitng udacity knowledge and the documuntation, lesson 5 (Operationalizing Machine Learning on SageMaker).
+resources included in train and deploy
+so I can deploy pytorch model , made a script has 3 functions, model_fn , input_fn, predict_fn this functions will take an image inputand preform the same transforms as hpo and train_model. after that comes the deployment of the endpoint and the call function that trigers the endpoint to make a predction.
 
-**TODO** Remember to provide a screenshot of the deployed active endpoint in Sagemaker.
+![endpoint](https://user-images.githubusercontent.com/37002455/195225981-1fd91b45-d35a-44bc-9575-5126faa2964c.jpg)
 
-## Standout Suggestions
-**TODO (Optional):** This is where you can provide information about any standout suggestions that you have attempted.
+
