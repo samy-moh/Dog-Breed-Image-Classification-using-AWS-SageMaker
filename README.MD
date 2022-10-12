@@ -41,7 +41,7 @@ I wanted to include more especially epoch , and to increase the training jobs. b
 As in lession 4, After importing debuger library ,setup hooks in train,test functionthen configered the debuger rules Vanishing Gradients to track the gradients of the loss function if its going too low. Overfitting to avoid make the model performing too well on the training set but poorly on new data. overtraining to check if the results in poor generalization and Poor weight initialisation.
 
 ### Results
-there was some issues detectd in the profiler , but mostley around increasing batch size and check if there is a bottleneck. even myself during the training realised incresing batch size the model preform better, I think as a best practice to try set a range for batch size , but I didn't do that because increasing training time and the resources is limited.
+there was some issues detectd in the profiler , but mostley around increasing batch size and check if there is a bottleneck. even myself during the training realised incresing batch size the model preform better, I think as a best practice to try too a range for epoch , but I didn't do that because increasing training time and the resources is limited.
 
 ![summery](https://user-images.githubusercontent.com/37002455/195224223-b2d78563-d87f-4f20-a11d-b69a3e1d9665.jpg)
 
